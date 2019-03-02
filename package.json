@@ -1,0 +1,37 @@
+{
+  "name": "refactor",
+  "version": "1.0.0",
+  "description": "Working refactor examples",
+  "main": "",
+    "scripts": {
+       "start": "node app/server.js&",
+       "stop": "ps aux|grep app/server.js|grep -v grep|awk '{print $2}'|xargs kill -9",	
+       "test": "nyc --reporter=text mocha"
+  },
+    "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mchirico/refactor.git"
+  },
+  "keywords": [
+    "refactor",
+    "test"
+  ],
+  "author": "Mike Chirico <mchirico@aipiggybot.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mchirico/refactor/issues"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-spies": "^1.0.0",
+    "chai-string": "^1.5.0",
+    "code-coverage": "0.0.2",
+    "express": "^4.16.4",
+    "lodash": "^4.17.11",
+    "mocha": "^6.0.2",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "nyc": "^13.3.0"
+  }
+}
