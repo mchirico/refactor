@@ -1,4 +1,15 @@
 
+class Greeter {
+    greeting: string;
+    constructor(message: string) {
+        this.greeting = message;
+    }
+    greet() {
+        return "Hello, " + this.greeting;
+    }
+}
+
+
 
 exports.squareOf = function squareOf(n) {
     return n * n

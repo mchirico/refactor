@@ -4,7 +4,7 @@ chai.use(spies);
 chai.use(require('chai-string'));
 let expect = chai.expect;
 
-let technique = require("../technique/technique");
+let technique = require("../technique/technique.ts");
 let names = require('../technique/names.json');
 let moreNames = require('../technique/moreNames.json');
 
