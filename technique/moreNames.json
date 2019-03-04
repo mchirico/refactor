@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Mike",
+    "job": [
+      {
+        "programmer": "javascript",
+        "years": 1
+      },
+      {
+        "programmer": "Go",
+        "years": 3
+      },
+      {
+        "programmer": "python",
+        "years": 7
+      },
+      {
+        "programmer": "kubernetes",
+        "years": 2
+      }
+
+    ]
+  },
+  {
+    "name": "Tom",
+    "job": [
+      {
+        "programmer": "javascript",
+        "years": 1
+      },
+      {
+        "programmer": "Go",
+        "years": 2
+      },
+      {
+        "programmer": "cockroachDB",
+        "years": 3
+      }
+    ]
+  }
+]

@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "Working refactor examples",
   "main": "",
-    "scripts": {
-       "start": "node app/server.js&",
-       "stop": "ps aux|grep app/server.js|grep -v grep|awk '{print $2}'|xargs kill -9",	
-       "test": "nyc --reporter=text mocha"
+  "scripts": {
+    "start": "node app/server.js&",
+    "stop": "ps aux|grep app/server.js|grep -v grep|awk '{print $2}'|xargs kill -9",
+    "test": "nyc --reporter=text mocha"
   },
-    "repository": {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/mchirico/refactor.git"
   },
@@ -32,6 +32,9 @@
     "request": "^2.88.0"
   },
   "devDependencies": {
-    "nyc": "^13.3.0"
+    "@types/node": "^11.10.4",
+    "nyc": "^13.3.0",
+    "tslint": "^5.13.1",
+    "typescript": "^3.3.3333"
   }
 }

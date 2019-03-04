@@ -6,6 +6,7 @@ let expect = chai.expect;
 
 let technique = require("../technique/technique");
 let names = require('../technique/names.json');
+let moreNames = require('../technique/moreNames.json');
 
 
 describe("Testing Techniques", function () {
@@ -22,6 +23,17 @@ describe("Testing Techniques", function () {
             expect(result[0]).to.have.deep.members([{programmer: 'javascript', years: 2},
                 {programmer: 'Go', years: 6},
                 {programmer: 'python', years: 10}]);
+
+        });
+    });
+
+    describe("People Class", function () {
+        it("Adding people", function () {
+
+            let result = technique.squareOf(3);
+             expect(result).to.equal(9);
+
+
 
         });
     });
