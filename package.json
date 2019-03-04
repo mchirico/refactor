@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node app/server.js&",
     "stop": "ps aux|grep app/server.js|grep -v grep|awk '{print $2}'|xargs kill -9",
-     "test": "mocha -r ts-node/register src/**/*.spec.ts"
+     "test": "mocha -r ts-node/register test/**/*.spec.ts"
   },
   "repository": {
     "type": "git",
