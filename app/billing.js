@@ -6,7 +6,6 @@ exports.statement = function statement(invoice, plays) {
         result += `  ${playFor(perf).name}: ${usd(amountFor(perf))} (${perf.audience} seats)\n`;
     }
 
-
     let totalAmount = appleSauce()
 
     let volumeCredits = totalVolumeCredits()
@@ -14,7 +13,6 @@ exports.statement = function statement(invoice, plays) {
     result += `Amount owed is ${usd(totalAmount)}\n`;
     result += `You earned ${volumeCredits} credits\n`;
     return result;
-
 
     // Nested Functions:
 
@@ -26,7 +24,6 @@ exports.statement = function statement(invoice, plays) {
         return totalAmount;
     }
 
-
     function totalVolumeCredits() {
         let volumeCredits = 0;
         for (let perf of invoice.performances) {
@@ -34,7 +31,6 @@ exports.statement = function statement(invoice, plays) {
         }
         return volumeCredits;
     }
-
 
     function usd(aNumber) {
         return new Intl.NumberFormat("en-US",
@@ -44,14 +40,12 @@ exports.statement = function statement(invoice, plays) {
             }).format(aNumber / 100);
     }
 
-
     function volumeCreditsFor(aPerformance) {
         let result = 0;
         result += Math.max(aPerformance.audience - 30, 0);
         if ("comedy" === playFor(aPerformance).type) result += Math.floor(aPerformance.audience / 5);
         return result;
     }
-
 
     function playFor(aPerformance) {
         return plays[aPerformance.playID];

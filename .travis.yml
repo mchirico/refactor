@@ -27,5 +27,5 @@ script:
   - npm run test
 
 after_success:
-  - npm run coverage:report
-  - npm run semantic-release
+  - echo "Done!"
+
