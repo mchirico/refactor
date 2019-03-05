@@ -1,8 +1,9 @@
-let chai = require('chai')
+var chai = require('chai')
     , spies = require('chai-spies');
 chai.use(spies);
 chai.use(require('chai-string'));
-let expect = chai.expect;
+var expect = chai.expect;
+
 
 let technique = require("../technique/technique.ts");
 let names = require('../technique/names.json');
