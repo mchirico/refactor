@@ -37,6 +37,7 @@ jobs:
     # Basic test
     - name: Basic Test
       run: |
+        npm restart
         npm test
         bash <(curl -s https://codecov.io/bash)
       env:
