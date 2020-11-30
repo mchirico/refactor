@@ -1,3 +1,4 @@
+![CI](https://github.com/mchirico/refactor/workflows/CI/badge.svg)
 [![Build Status](https://travis-ci.org/mchirico/refactor.svg?branch=master)](https://travis-ci.org/mchirico/refactor)
 
 # refactor
